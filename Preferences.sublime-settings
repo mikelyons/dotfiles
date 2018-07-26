@@ -1,0 +1,10 @@
+{
+	// https://robots.thoughtbot.com/no-newline-at-end-of-file
+	"ensure_newline_at_eof_on_save": true,
+  // Spacing between the gutter and the text
+  "margin": 2,
+  // The number of spaces a tab is considered equal to
+  "tab_size": 2,
+	"font_size": 10,
+	"ignored_packages": []
+}
