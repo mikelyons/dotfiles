@@ -1,15 +1,31 @@
+[user]
+        email = test@example.com
+        name = Mike Lyons
 [color]
-  ui = auto
+        ui = auto
 [color "branch"]
-  current = yellow reverse
-  local = yellow
-  remote = green
+        current = cyan black bold
+        local = yellow
+        remote = green bold
 [color "diff"]
-  meta = yellow bold
-  frag = magenta bold
-  old = red bold
-  new = green bold
+        meta = magenta dim
+        frag = yellow bold
+        old = red bold
+        new = green bold
+        commit = cyan reverse
+        whitespace = red
 [color "status"]
-  added = yellow
-  changed = green
-  untracked = cyan
+        header = red dim
+        branch = red bold
+        added = green black
+        changed = yellow red bold
+        updated = yellow red blink
+        untracked = cyan
+        nobranch = red reverse
+[color "interactive"]
+        prompt = blue bold
+        header = cyan blue
+        help = cyan
+        error = yellow red blink
+[commit]
+        template = /home/mikelyons/.gitmessage.txt
