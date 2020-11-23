@@ -1,3 +1,17 @@
+#[alias]
+#       st = status -sb
+#       ci = commit
+#       co = checkout
+#        graph = log --graph --oneline --decorate=short --branches='*'
+#       br = branch
+#       df = diff --color-words='[^[:space:]]'
+# sh = show --color-words='[^[:space:]]'
+#       lg = log -p
+#        serve = !git daemon --reuseaddr --verbose --base-path=. --export-all ./.git
+#        pend = cherry -v origin/master
+#       prefab = cherry -v origin/fabrication
+[apply]
+        whitespace = nowarn
 [user]
         email = lyons.mr@gmail.com
         name = Mike Lyons
@@ -14,7 +28,7 @@
         frag = yellow bold
         old = red
         new = green
-        commit = red cyan dim
+        commit = black green dim
         whitespace = red
 [color "status"]
         header = white dim
@@ -38,3 +52,11 @@
         template = /home/mikelyons/.gitmessage.txt
 [core]
         editor = vim
+[format]
+        pretty = '%C(yellow)%h%Creset %C(magenta)%cd%Creset %d %s'
+[log]
+#       date = short
+        date = relative
+[push]
+        default = simple
+
